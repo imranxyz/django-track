@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% block title %} Edit Order {% endblock %}
+
+
+{% block content %}
+    <div class="container">
+        <h1>Edit Pizza</h1>
+        <h2>{{ note }}</h2>
+
+        <form action="{% url 'edit_order' pizza.id %}" method="post">
+        {% csrf_token %}
+
+        {% for field in pizzaform %}
+            <div class="form-group">
+                {{ field.errors }}
+                {{ field.label_tag }}
+                {% render_field field class='form-control' %}
+            </div>
+        {% endfor %}
+        
+        <input type="submit" value="Order" class="btn btn-primary">
+        </form>
+    </div>
+{% endblock %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
