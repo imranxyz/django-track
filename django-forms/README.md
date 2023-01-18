@@ -1,1 +1,1 @@
-![django-certificates](./django-forms.pdf)
+## [Django: Forms](https://www.linkedin.com/learning/django-forms) with Nick Walter
