@@ -1,4 +1,4 @@
-> ## [Django: Forms](https://www.linkedin.com/learning/django-forms) with Nick Walter
+### [Django: Forms](https://www.linkedin.com/learning/django-forms) with Nick Walter
 
 - [x] Introduction
 - [x] 1. Getting Started with Forms
